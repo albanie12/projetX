@@ -1,10 +1,12 @@
-print("Voici la devinette")
+import random
 
-nombre_secret = 23
+chiffre_a_trouver = 23
 
-nombre_utilisateur = int(input("Taper un nombre entre 0 et 100"))
+nbr_user = int(input("Trouvez le chiffre à deviner : "))
 
-if nombre_utilisateur == nombre_secret:
-    print("Gagné")
-else:
-    print("Perdu")
+while nbr_user != chiffre_a_trouver :
+    nbr_user = int(input("Trouvez le chiffre à deviner : "))
+
+
+    if nbr_user == chiffre_a_trouver :
+        print("Gagné !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
